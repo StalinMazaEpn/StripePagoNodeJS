@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <img class="card-img-top" src="img/software.png" alt="Imagen Producto">
+            <div class="card-body">
+                <h2>$20</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus praesentium, id at ad dolor quam, nesciunt quis excepturi dolorum, vitae delectus dignissimos nobis aut perspiciatis laborum recusandae eaque nihil distinctio?</p>
+            </div>
+            <div class="card-footer">
+
+                <form action="/checkout" method="POST">
+                    <script
+                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="pk_test_oIzxaqoCDpxoYUidXgTaEM6B"
+                        data-amount="2000"
+                        data-name="Store Tech"
+                        data-description="Software Product Web"
+                        data-image="img/logo.png"
+                        data-locale="auto">
+                    </script>
+                    <script>
+                        document.getElementsByClassName("stripe-button-el")[0].style.display = "none";
+                    </script>
+                     <button class="btn btn-dark btn-block">
+                    Buy <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </form>
+
+               
+            </div>
+        </div>
+    </div>
+</div>
