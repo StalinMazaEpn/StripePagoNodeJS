@@ -1,7 +1,8 @@
+require('dotenv').config();
 const { Router } = require("express");
 const router = Router();
 
-const stripe = require("stripe")('sk_test_oaGOVyMuaPmwjbvXo1Mzjtte');
+const stripe = require("stripe")(process.env.STRIPE_KEY);
 
 router.get("/", (req, res) => {
     // res.send("Bienvenido a mi App de Stripe");
